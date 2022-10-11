@@ -1,0 +1,50 @@
+.title {
+    margin: 5rem auto;
+    width: 70%;
+    margin: 5rem auto 3rem auto;
+    // border: 3px solid black;
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    height: 100vh;
+    // border: 3px slid black;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.articles-section {
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.side {
+    width: 30%;
+    // border: 3px solid green;
+
+    & h3 {
+        color: $teal;
+        text-align: center;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    // border: 3px solid red;
+    max-height: 20rem;
+}
+
+.col {
+    width: 100%;
+    // border: 3px solid blue;
+}
+
+.article-image-container img {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: contain;
+}
