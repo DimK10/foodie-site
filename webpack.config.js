@@ -32,11 +32,20 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: './recipe.html',
+      template: './src/recipe.html',
+    }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 };
