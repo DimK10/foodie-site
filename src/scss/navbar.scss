@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    border-bottom: .1rem solid #CECECE;
+
+    > .logo {
+        padding: 1rem;
+    }
+
+    a {
+        color: #000;
+
+        &:hover {
+            color: #008081;
+        }
+    }
+
+    .nav-links {
+        margin-left: auto;
+
+        .menu {
+            display: flex;
+
+            > li {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.recipes {
+    position: relative;
+
+    &:hover .dropdown {
+        // display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.dropdown {
+    // display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+    padding: .8rem;
+    left: 0;
+
+    & > li {
+        padding: .3rem;
+    }
+}

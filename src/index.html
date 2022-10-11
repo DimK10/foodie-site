@@ -8,8 +8,42 @@
     <title>Foodie App</title>
 </head>
 
-<body>
-    <p>test</p>
+ <body>
+ <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">Foodie</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+      <div class="nav-btn">
+        <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+        </label>
+        </div>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="/">Home</a></li>
+         
+         <li class="recipes">
+           <a href="/">food recipes</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+             <li><a href="/">Breakfast</a></li>
+             <li><a href="/">Lunch</a></li>
+             <li><a href="/">Dinner</a></li>
+             <li><a href="/">Dessert</a></li>
+           </ul>
+         </li>
+         <li><a href="/">Drinks</a></li>
+         <li><a href="/">About Us</a></li>
+       </div>
+     </ul>
+   </nav>
+ </body>
+</html>
+
     <script type="text/javascript" src="../dist/build/bundle.js"></script>
 </body>
 
